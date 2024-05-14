@@ -64,10 +64,11 @@ const Form = () => {
     formData.append("picturePath", values.picture.name);
 
     const savedUserResponse = await fetch(
-      "https://sociopedia-df5azqtbv-haris-projects-ccdab74c.vercel.app/auth/register",
+      "https://sociopedia-api-ten.vercel.app/auth/auth/register",
       {
         method: "POST",
         body: formData,
+        mode: "no-cors",
       }
     );
     const savedUser = await savedUserResponse.json();
