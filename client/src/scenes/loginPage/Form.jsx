@@ -64,7 +64,7 @@ const Form = () => {
     formData.append("picturePath", values.picture.name);
 
     const savedUserResponse = await fetch(
-      "https://sociopedia-api-seven.vercel.app/auth/register",
+      "https://sociopedia-api-haris-projects-ccdab74c.vercel.app/auth/register",
       {
         method: "POST",
         body: formData,
@@ -80,7 +80,7 @@ const Form = () => {
 
   const login = async (values, onSubmitProps) => {
     const loggedInResponse = await fetch(
-      "https://sociopedia-api-seven.vercel.app/auth/login",
+      "https://sociopedia-api-haris-projects-ccdab74c.vercel.app/auth/login",
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },

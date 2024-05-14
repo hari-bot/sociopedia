@@ -23,7 +23,7 @@ const Friend = ({ friendId, name, subtitle, userPicturePath }) => {
 
   const patchFriend = async () => {
     const response = await fetch(
-      `https://sociopedia-api-seven.vercel.app/users/${_id}/${friendId}`,
+      `https://sociopedia-api-haris-projects-ccdab74c.vercel.app/users/${_id}/${friendId}`,
       {
         method: "PATCH",
         headers: {

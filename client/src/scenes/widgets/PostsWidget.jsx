@@ -10,7 +10,7 @@ const PostsWidget = ({ userId, isProfile = false }) => {
 
   const getPosts = async () => {
     const response = await fetch(
-      "https://sociopedia-api-seven.vercel.app/posts",
+      "https://sociopedia-api-haris-projects-ccdab74c.vercel.app/posts",
       {
         method: "GET",
         headers: { Authorization: `Bearer ${token}` },
@@ -22,7 +22,7 @@ const PostsWidget = ({ userId, isProfile = false }) => {
 
   const getUserPosts = async () => {
     const response = await fetch(
-      `https://sociopedia-api-seven.vercel.app/posts/${userId}`,
+      `https://sociopedia-api-haris-projects-ccdab74c.vercel.app/posts/${userId}`,
       {
         method: "GET",
         headers: { Authorization: `Bearer ${token}` },

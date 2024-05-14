@@ -17,7 +17,7 @@ const ProfilePage = () => {
 
   const getUser = async () => {
     const response = await fetch(
-      `https://sociopedia-api-seven.vercel.app/users/${userId}`,
+      `https://sociopedia-api-haris-projects-ccdab74c.vercel.app/users/${userId}`,
       {
         method: "GET",
         headers: { Authorization: `Bearer ${token}` },
