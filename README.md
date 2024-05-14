@@ -29,13 +29,17 @@ To run Sociopedia locally, follow these steps:
 2. Install dependencies:
 
    ```bash
-   npm install
+   npm install-server
+   install-client
+   
    ```
 
 3. Start the development server:
 
    ```bash
-   npm start
+   npm start-server
+   npm start-client
+   
    ```
 
 4. Open your web browser and visit `http://localhost:3000` to view the application.
