@@ -30,7 +30,7 @@ To run Sociopedia locally, follow these steps:
 
    ```bash
    npm install-server
-   install-client
+   npm install-client
    
    ```
 
