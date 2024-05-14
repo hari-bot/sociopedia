@@ -34,8 +34,7 @@ app.use(express.json({ limit: "30mb", extended: true }));
 app.use(express.urlencoded({ limit: "30mb", extended: true }));
 app.use(
   cors({
-    origin:
-      "https://sociopedia-frontend-git-main-haris-projects-ccdab74c.vercel.app",
+    origin: "https://sociopedia-frontend-beta.vercel.app",
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
     credentials: true,
   })

@@ -80,7 +80,7 @@ const Form = () => {
 
   const login = async (values, onSubmitProps) => {
     const loggedInResponse = await fetch(
-      "https://sociopedia-c33wbbmc8-haris-projects-ccdab74c.vercel.app/auth/login",
+      "https://sociopedia-api-ten.vercel.app/auth/login",
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
