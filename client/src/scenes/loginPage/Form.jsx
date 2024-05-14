@@ -64,7 +64,7 @@ const Form = () => {
     formData.append("picturePath", values.picture.name);
 
     const savedUserResponse = await fetch(
-      "https://sociopedia-api-haris-projects-ccdab74c.vercel.app/auth/register",
+      "https://sociopedia-7vl5n5vfi-haris-projects-ccdab74c.vercel.app/auth/register",
       {
         method: "POST",
         body: formData,
