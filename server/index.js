@@ -32,13 +32,7 @@ app.use(helmet.crossOriginResourcePolicy({ policy: "cross-origin" }));
 app.use(morgan("common"));
 app.use(express.json({ limit: "30mb", extended: true }));
 app.use(express.urlencoded({ limit: "30mb", extended: true }));
-app.use(
-  cors({
-    origin: "https://sociopedia-frontend-beta.vercel.app",
-    methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
-    credentials: true,
-  })
-);
+app.use("*");
 app.use("/assets", express.static(path.join(__dirname, "public/assets")));
 
 /*FILE STORAGE*/
