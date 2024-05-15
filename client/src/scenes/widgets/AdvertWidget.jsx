@@ -20,7 +20,7 @@ const AdvertWidget = () => {
         width="100%"
         height="100%"
         alt="advert"
-        src="https://sociopedia-api-haris-projects-ccdab74c.vercel.app/assets/info4.jpeg"
+        src="https://sociopedia-api-ten.vercel.app/assets/info4.jpeg"
         style={{ borderRadius: "0.75rem", margin: "0.75rem 0" }}
       />
       <FlexBetween>

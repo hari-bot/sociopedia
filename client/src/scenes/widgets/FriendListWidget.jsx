@@ -13,7 +13,7 @@ const FriendListWidget = ({ userId }) => {
 
   const getFriends = async () => {
     const response = await fetch(
-      `https://sociopedia-api-haris-projects-ccdab74c.vercel.app/${userId}/friends`,
+      `https://sociopedia-api-ten.vercel.app/${userId}/friends`,
       {
         method: "GET",
         headers: { Authorization: `Bearer ${token}` },

@@ -8,7 +8,7 @@ const UserImage = ({ image, size = "60px" }) => {
         style={{ objectFit: "cover", borderRadius: "50%" }}
         width={size}
         height={size}
-        src={`https://sociopedia-api-haris-projects-ccdab74c.vercel.app/assets/${image}`}
+        src={`https://sociopedia-api-ten.vercel.app/assets/${image}`}
       />
     </Box>
   );

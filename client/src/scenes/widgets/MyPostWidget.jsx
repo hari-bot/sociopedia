@@ -47,7 +47,7 @@ const MyPostWidget = ({ picturePath }) => {
     }
 
     const response = await fetch(
-      `https://sociopedia-api-haris-projects-ccdab74c.vercel.app/posts`,
+      `https://sociopedia-api-ten.vercel.app/posts`,
       {
         method: "POST",
         headers: { Authorization: `Bearer ${token}` },
