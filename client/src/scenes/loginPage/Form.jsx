@@ -15,6 +15,7 @@ import { useDispatch } from "react-redux";
 import { setLogin } from "../../state";
 import Dropzone from "react-dropzone";
 import FlexBetween from "../../components/FlexBetween";
+import { grey } from "@mui/material/colors";
 
 const registerSchema = yup.object().shape({
   firstName: yup.string().required("required"),
@@ -275,6 +276,23 @@ const Form = () => {
                   helperText={touched.password && errors.password}
                   sx={{ gridColumn: "span 4" }}
                 />
+                <Box
+                  sx={{ gridColumn: "span 4" }}
+                  p="1rem"
+                  mt="1rem"
+                  borderRadius="5px"
+                  backgroundColor={palette.neutral.light}
+                >
+                  <Typography variant="subtitle1" fontWeight="bold">
+                    Demo Credentials
+                  </Typography>
+                  <Typography variant="body1" mt="0.5rem">
+                    <strong>Email:</strong> fakeuser@mail.com
+                  </Typography>
+                  <Typography variant="body1">
+                    <strong>Password:</strong> 12345678
+                  </Typography>
+                </Box>
               </>
             )}
 
