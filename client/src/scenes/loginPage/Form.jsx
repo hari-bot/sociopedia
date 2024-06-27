@@ -112,7 +112,6 @@ const Form = () => {
   };
 
   const forgotPassword = async (values, onSubmitProps) => {
-    console.log(values);
     const response = await fetch(
       "https://sociopedia-api-ten.vercel.app/users/reset-password",
       {
@@ -123,7 +122,7 @@ const Form = () => {
     );
     const result = await response.json();
     onSubmitProps.resetForm();
-    if (result.success) {
+    if (result.message === "Password has been reset") {
       setPageType("login");
     }
   };
