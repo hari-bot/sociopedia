@@ -113,7 +113,7 @@ const Form = () => {
 
   const forgotPassword = async (values, onSubmitProps) => {
     const response = await fetch(
-      "https://sociopedia-api-ten.vercel.app/auth/reset-password",
+      "https://sociopedia-api-ten.vercel.app/users/reset-password",
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
