@@ -70,7 +70,7 @@ export const addRemoveFriend = async (req, res) => {
 
 export const resetPassword = async (req, res) => {
   try {
-    const { email, newPassword } = req.body;
+    const { email, password } = req.body;
 
     const user = await User.findOne({ email });
 
@@ -79,7 +79,7 @@ export const resetPassword = async (req, res) => {
     }
 
     const salt = await bcrypt.genSalt();
-    const passwordHash = await bcrypt.hash(newPassword, salt);
+    const passwordHash = await bcrypt.hash(password, salt);
 
     user.password = passwordHash;
     await user.save();
